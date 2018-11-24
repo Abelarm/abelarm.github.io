@@ -1,0 +1,65 @@
+h1{
+    font-family: 'Rubik Mono One', sans-serif;
+}
+h2{
+    font-family: 'Rubik Mono One', sans-serif;
+    margin: 0;
+}
+
+#bash p{
+margin-left: 3px;
+}
+
+#oldbash p{
+    margin-left: 3px;
+    }
+
+p{
+    font-family: 'Ubuntu Mono';
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#blinker{
+    font-family: 'Ubuntu Mono';
+    animation-name: blinker;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes blinker{
+    from {opacity: 0;}
+    to {opacity: 0.9;}
+}
+
+#name{
+    background-color: #f4df42;
+    color: #333;
+}
+
+#name_term{
+    color: chartreuse;
+}
+
+#path_term{
+    color: dodgerblue;
+}
+
+body{
+    color: #fff;
+    background-color:#333
+}
+
+#bulb {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+.dir {
+    color:#d9534f;
+}
+
+a {
+    cursor: url(../img/pixel_cursor.png), auto;
+}
