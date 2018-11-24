@@ -27,7 +27,7 @@ let autoCompleteCount = 0;
 
 document.addEventListener('keydown', function(event) {
      let x = document.getElementById("input");
-     let key = event.keyCode;
+     let key = event.which;
      // Enter key
      if(key === 13){
          if (cmds.commands[x.innerHTML.split(" ")[0]]!=undefined){
