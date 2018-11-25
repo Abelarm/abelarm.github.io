@@ -25,7 +25,8 @@
     "jquery": "^3.2.1",
     "uglify-es": "^3.1.10",
     "uglify-js": "^2.8.22",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "typeit": "^5.10.7"
   },
   "devDependencies": {},
   "repository": {

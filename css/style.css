@@ -7,12 +7,12 @@ h2{
 }
 
 #bash p{
-margin-left: 3px;
+    margin-left: 3px;
 }
 
 #oldbash p{
     margin-left: 3px;
-    }
+}
 
 p{
     font-family: 'Ubuntu Mono';
@@ -52,8 +52,8 @@ body{
 }
 
 #bulb {
-  -webkit-filter: brightness(0) invert(1);
-  filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
 }
 
 .dir {

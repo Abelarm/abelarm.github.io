@@ -1,5 +1,6 @@
 let func = require("./functions");
 let $ = require("jquery");
+let TypeIt = require("typeit");
 
 
 // loading data with Promise
@@ -118,6 +119,65 @@ let commands = {
         func.displayOutput(data);
         }else{
             func.errorMessage(x);
+        }
+    },
+    "autopilot":(phone=false)=>{
+        func.displayOutput();
+        speed = 70;
+        document.getElementById('blinker').style ='display:none;';
+        if (phone === true){
+            new TypeIt('#input', {
+                strings: ['Hi the website is intend for desktop use...', 'So the \"autopilot\" mode will start, enjoy the jurney :)'],
+                cursorChar: '_',
+                speed: speed,
+                breakLines: false,
+                autoStart: false,
+                afterComplete: function (instance) {
+                    func.displayOutput('');
+                }
+            }).destroy();
+        }
+        else{
+            new TypeIt('#input', {
+                strings: ['Hi you selected the \"autopilot\" mode ', 'My resume will be printed out, enjoy the journey :)'],
+                cursorChar: '_',
+                speed: speed,
+                breakLines: false,
+                autoStart: false,
+                afterComplete: function (instance) {
+                    func.displayOutput('');
+                    new TypeIt('#input', {
+                        strings: ['First some informations about me', 'cat about.txt'],
+                        cursorChar: '_',
+                        speed: speed,
+                        breakLines: false,
+                        autoStart: false,
+                        afterComplete: function (instance) {
+                            commands.cat('cat about.txt');
+                            new TypeIt('#input', {
+                                strings: ['cat contacts.txt'],
+                                cursorChar: '_',
+                                speed: speed,
+                                breakLines: false,
+                                autoStart: false,
+                                afterComplete: function (instance) {
+                                    commands.cat('cat contacts.txt');
+                                    new TypeIt('#input', {
+                                        strings: ['Now I\'ll show you my education', 'cat education.txt'],
+                                        cursorChar: '_',
+                                        speed: speed,
+                                        breakLines: false,
+                                        autoStart: false,
+                                        afterComplete: function (instance) {
+                                            commands.cat('cat education.txt');
+                                        }
+                                    }).destroy();
+                                }
+                            }).destroy();
+                        }
+                    }).destroy();
+                }
+            }).destroy();
         }
     }
 
