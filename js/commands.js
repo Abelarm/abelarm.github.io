@@ -147,6 +147,7 @@ let commands = {
 }
 
 function startAutopilot(){   
+    alert('Starting autopilot');
     speed = 60;
     new TypeIt('#input', {
         strings: ['Hi you selected the \"autopilot\" mode ', 'My resume will be printed out, enjoy the journey :)'],
