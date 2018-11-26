@@ -12,6 +12,7 @@ let func = require("./functions.js");
 let cmds = require("./commands.js");
 let $ = require("jquery");
 
+
 // global path variable
 path = "/"; /*global path*/
 current_dir = "/" /*global current_dir*/
@@ -110,10 +111,10 @@ document.addEventListener('keydown', function(event) {
 
 document.getElementById("bulb").addEventListener("click",func.changeColor);
 
-if (func.isMobile === true){
+if (func.isMobile() === true){
     console.log('Preseting in mobile mode');
-    alert('Starting autopilot');
+    document.getElementById('help').style = 'display:none';
     cmds.commands.autopilot(true);
 }else{
-    console.log('Presenting not in mobile');
+    console.log('Presenting desktop mode');
 }

@@ -141,15 +141,10 @@ function changeColor(){
     }
 };
 
-function scroll(){
-    if(document.body.scrollHeight-document.getElementById("terminal").offsetHeight<300){
-        $("html, body").animate({ scrollTop: $(document).height()-$(window).height() }, 60);
-    }
-};
 
-function scroll2(){
-    $("html, body").animate({ scrollTop: $(document).height() }, 60);
-}
+function scroll(){
+    $("html, body").animate({scrollTop: $('html, body').get(0).scrollHeight}, 20);
+};
 
 function isMobile() {
     var check = false;
@@ -167,6 +162,6 @@ module.exports = {
     printPath: printPath,
     getContext: getContext,
     checkIfArgs: checkIfArgs,
-    scroll: scroll2,
+    scroll: scroll,
     isMobile: isMobile
 }

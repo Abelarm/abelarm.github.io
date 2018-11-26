@@ -22,13 +22,14 @@ let data = {"Info":{
                     </div> \
                     <div style=\"text-align: right\"> \
                         University of Salerno, Italy \
-                    </div> \ </div> ---------------------------------------------------------------------------------------------------------------------------------------<br> \
+                    </div> \
+                    </div> <div class=\"col-md-4 col-md-offset-3\" > //------------------------// </div><br> \
                     <div class=\"row\" style=\"width: 70%;  font-family: 'Ubuntu Mono'; font-size: 16px\"> \
                         <div class=\"col-sm-2\"> \
                                 Sep-2010<br> \
                                 Mar-2014 \
                         </div> \
-                        <div class=\"col-sm-6\" st> \
+                        <div class=\"col-sm-6\" > \
                                 <b>BSc., Computer Science</b> (110/110 Laude) \
                                 <div><b>Bachelor Thesis</b> \
                                         <ul> \
@@ -47,7 +48,7 @@ let data = {"Info":{
                                         Sep-2018<br> \
                                         Current \
                                     </div> \
-                                    <div class=\"col-sm-7\" st> \
+                                    <div class=\"col-sm-7\" > \
                                         <b>Machine Learning Researcher</b> \
                                             <ul> \
                                                 <li> Working as Machine Learning and Deep Learning Researcher on H2020 EU-funded projects. \
@@ -58,13 +59,13 @@ let data = {"Info":{
                                     <div style=\"text-align: right;\"> \
                                         <a href=\"http://www.ismb.it/en\" target=\"_blank\" rel=\"noreferrer\">ISMB</a>, Turin \
                                     </div> \
-                                </div> ---------------------------------------------------------------------------------------------------------------------------------------<br> \
+                                </div> <div class=\"col-md-4 col-md-offset-3\" > //------------------------// </div> \
                                 <div class=\"row\" style=\"width: 70%;  font-family: 'Ubuntu Mono'; font-size: 16px\"> \
                                     <div class=\"col-sm-2\"> \
                                         Sep-2017<br> \
                                         Aug-2018 \
                                     </div> \
-                                    <div class=\"col-sm-7\" st> \
+                                    <div class=\"col-sm-7\" > \
                                         <b>ICT Application Specialist</b> \
                                             <ul> \
                                                 <li> Software developer for projects regarding Industry 4.0. Developing and managing applications that support the Maserati production plant in Turin. \
@@ -74,13 +75,13 @@ let data = {"Info":{
                                     <div style=\"text-align: right;\"> \
                                         <a href=\"https://www.fcagroup.com/en-US/Pages/home.aspx\" target=\"_blank\" rel=\"noreferrer\">Fiat Chrysler Automobiles</a>, Turin \
                                     </div> \
-                                </div> ---------------------------------------------------------------------------------------------------------------------------------------<br> \
+                                </div> <div class=\"col-md-4 col-md-offset-3\" > //------------------------// </div> \
                                 <div class=\"row\" style=\"width: 70%;  font-family: 'Ubuntu Mono'; font-size: 16px\"> \
                                     <div class=\"col-sm-2\"> \
                                         Mar-2017<br> \
                                         Sep-2017 \
                                     </div> \
-                                    <div class=\"col-sm-7\" st> \
+                                    <div class=\"col-sm-7\" > \
                                         <b>Backoffice/Backend Developer</b> \
                                             <ul> \
                                                 <li> Worked with the core development team for adding and managing features of main system. \
@@ -90,13 +91,13 @@ let data = {"Info":{
                                     <div style=\"text-align: right;\"> \
                                         <a href=\"http://www.deustechnology.com/\" target=\"_blank\" rel=\"noreferrer\">Deus Technology</a>, Milan \
                                     </div> \
-                                </div>---------------------------------------------------------------------------------------------------------------------------------------<br> \
+                                </div><div class=\"col-md-4 col-md-offset-3\" > //------------------------// </div> \
                                 <div class=\"row\" style=\"width: 70%;  font-family: 'Ubuntu Mono'; font-size: 16px\"> \
                                     <div class=\"col-sm-2\"> \
                                         Jul-2015<br> \
                                         Sep-2015 \
                                     </div> \
-                                    <div class=\"col-sm-7\" st> \
+                                    <div class=\"col-sm-7\" > \
                                         <b>Developer Intern</b> \
                                             <ul> \
                                                 <li> Developed the <i>UCL Remote Study Event Dispatcher</i>, \
@@ -113,7 +114,7 @@ let data = {"Info":{
                                                     <div class=\"col-sm-2\"> \
                                                         Oct-2016 \
                                                     </div> \
-                                                    <div class=\"col-sm-6\" st> \
+                                                    <div class=\"col-sm-6\" > \
                                                         <b>Sweden Game Arena Staff</b> \
                                                         <br> \
                                                         Provided support to the speakers of the conference and contributed to solve occured problems. \
@@ -121,12 +122,12 @@ let data = {"Info":{
                                                     <div style=\"text-align: right;\"> \
                                                         <a href=\"http://swedengamearena.com/\" target=\"_blank\" rel=\"noreferrer\">Sweden Game Arena</a>, Skövde \
                                                     </div> \
-                                            </div>---------------------------------------------------------------------------------------------------------------------------------------<br> \
+                                            </div><div class=\"col-md-4 col-md-offset-3\" > //------------------------// </div> \
                                             <div class=\"row\" style=\"width: 70%;  font-family: 'Ubuntu Mono'; font-size: 16px\"> \
                                                     <div class=\"col-sm-2\"> \
                                                         Jun 2016 \
                                                     </div> \
-                                                    <div class=\"col-sm-6\" st> \
+                                                    <div class=\"col-sm-6\" > \
                                                         <b>Data analysis Hackaton</b> \
                                                         <br> \
                                                         Hackaton for predicting frauds using a dataset of credit cards records. \
@@ -134,12 +135,12 @@ let data = {"Info":{
                                                     <div style=\"text-align: right;\"> \
                                                         <a href=\"http://www.labeconomia.unisa.it/sus2/\" target=\"_blank\" rel=\"noreferrer\">Stats under the Stars 2</a>, Salerno \
                                                     </div> \
-                                            </div>---------------------------------------------------------------------------------------------------------------------------------------<br> \
+                                            </div><div class=\"col-md-4 col-md-offset-3\" > //------------------------// </div> \
                                             <div class=\"row\" style=\"width: 70%;  font-family: 'Ubuntu Mono'; font-size: 16px\"> \
                                                     <div class=\"col-sm-2\"> \
                                                         Mar 2016 \
                                                     </div> \
-                                                    <div class=\"col-sm-6\" st> \
+                                                    <div class=\"col-sm-6\" > \
                                                         <b>Ideas Hackaton</b> \
                                                         <br> \
                                                         Hackaton for defining the future of the food sector. \
@@ -147,12 +148,12 @@ let data = {"Info":{
                                                     <div style=\"text-align: right;\"> \
                                                         <a href=\"http://h-ack.com/food2016\" target=\"_blank\" rel=\"noreferrer\">H-Farm</a>, Treviso \
                                                     </div> \
-                                            </div>---------------------------------------------------------------------------------------------------------------------------------------<br> \
+                                            </div><div class=\"col-md-4 col-md-offset-3\" > //------------------------// </div> \
                                             <div class=\"row\" style=\"width: 70%;  font-family: 'Ubuntu Mono'; font-size: 16px\"> \
                                                     <div class=\"col-sm-2\"> \
                                                         Jan 2015 \
                                                     </div> \
-                                                    <div class=\"col-sm-6\" st> \
+                                                    <div class=\"col-sm-6\" > \
                                                         <b>Global Game Jam</b> \
                                                         <br> \
                                                         Developed an endless game in Unity3D in 48 hours, for the Global Game Jam.<br> \
