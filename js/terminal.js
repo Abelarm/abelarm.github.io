@@ -48,9 +48,7 @@ document.addEventListener('keydown', function(event) {
          autoCompleteCount = 0;
 
          // scrolling
-         if(document.body.scrollHeight-document.getElementById("terminal").offsetHeight<300){
-             $("html, body").animate({ scrollTop: $(document).height()-$(window).height() }, 60);
-         }
+         func.scroll();
      }
 
      // Up arrow key
@@ -111,3 +109,10 @@ document.addEventListener('keydown', function(event) {
 });
 
 document.getElementById("bulb").addEventListener("click",func.changeColor);
+
+if (func.isMobile === true){
+    console.log('Preseting in mobile mode');
+    commands.autopilot(true);
+}else{
+    console.log('Presenting not in mobile');
+}
