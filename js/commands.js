@@ -1,4 +1,4 @@
-let func = require("./functions");
+let func = require("./functions.js");
 let $ = require("jquery");
 let TypeIt = require("typeit");
 
@@ -121,159 +121,167 @@ let commands = {
             func.errorMessage(x);
         }
     },
-    "autopilot":(phone=false)=>{
-        func.displayOutput();
+    "autopilot":(phone=false)=>{   
         speed = 60;
         document.getElementById('blinker').style ='display:none;';
         if (phone === true){
             new TypeIt('#input', {
-                strings: ['Hi the website is intend for desktop use...', 'So the \"autopilot\" mode will start, enjoy the jurney :)'],
+                strings: ['Hi the website is intend for desktop use...', 'So the \"autopilot\" mode will start'],
                 cursorChar: '_',
                 speed: speed,
                 breakLines: false,
                 autoStart: false,
                 afterComplete: function (instance) {
                     func.displayOutput('');
+                    startAutopilot();
                 }
             }).destroy();
         }
         else{
+            func.displayOutput();
+            startAutopilot();
+        }
+        
+    }
+
+}
+
+function startAutopilot(){   
+    speed = 60;
+    new TypeIt('#input', {
+        strings: ['Hi you selected the \"autopilot\" mode ', 'My resume will be printed out, enjoy the journey :)'],
+        cursorChar: '_',
+        speed: speed,
+        breakLines: false,
+        autoStart: false,
+        afterComplete: function (instance) {
+            func.displayOutput('');
             new TypeIt('#input', {
-                strings: ['Hi you selected the \"autopilot\" mode ', 'My resume will be printed out, enjoy the journey :)'],
+                strings: ['First some informations about me', 'cat about.txt'],
                 cursorChar: '_',
                 speed: speed,
                 breakLines: false,
                 autoStart: false,
                 afterComplete: function (instance) {
-                    func.displayOutput('');
+                    commands.cat('cat about.txt');
+                    func.scroll();
                     new TypeIt('#input', {
-                        strings: ['First some informations about me', 'cat about.txt'],
+                        strings: ['cat contacts.txt'],
                         cursorChar: '_',
                         speed: speed,
                         breakLines: false,
                         autoStart: false,
                         afterComplete: function (instance) {
-                            commands.cat('cat about.txt');
+                            commands.cat('cat contacts.txt');
                             func.scroll();
                             new TypeIt('#input', {
-                                strings: ['cat contacts.txt'],
+                                strings: ['Now I\'ll show you my education', 'cat education.txt'],
                                 cursorChar: '_',
                                 speed: speed,
                                 breakLines: false,
                                 autoStart: false,
                                 afterComplete: function (instance) {
-                                    commands.cat('cat contacts.txt');
+                                    commands.cat('cat education.txt');
                                     func.scroll();
                                     new TypeIt('#input', {
-                                        strings: ['Now I\'ll show you my education', 'cat education.txt'],
+                                        strings: ['Let\'s move to the experiences directory', 'cd experiences'],
                                         cursorChar: '_',
                                         speed: speed,
                                         breakLines: false,
                                         autoStart: false,
                                         afterComplete: function (instance) {
-                                            commands.cat('cat education.txt');
+                                            commands.cd('cd experiences');
                                             func.scroll();
                                             new TypeIt('#input', {
-                                                strings: ['Let\'s move to the experiences directory', 'cd experiences'],
+                                                strings: ['Work experience', 'cat vocational.txt'],
                                                 cursorChar: '_',
                                                 speed: speed,
                                                 breakLines: false,
                                                 autoStart: false,
                                                 afterComplete: function (instance) {
-                                                    commands.cd('cd experiences');
+                                                    commands.cat('cat vocational.txt');
                                                     func.scroll();
                                                     new TypeIt('#input', {
-                                                        strings: ['Work experience', 'cat vocational.txt'],
+                                                        strings: ['Other experience', 'cat other.txt'],
                                                         cursorChar: '_',
                                                         speed: speed,
                                                         breakLines: false,
                                                         autoStart: false,
                                                         afterComplete: function (instance) {
-                                                            commands.cat('cat vocational.txt');
+                                                            commands.cat('cat other.txt');
                                                             func.scroll();
                                                             new TypeIt('#input', {
-                                                                strings: ['Other experience', 'cat other.txt'],
+                                                                strings: ['Back to the main directory', 'cd ..'],
                                                                 cursorChar: '_',
                                                                 speed: speed,
                                                                 breakLines: false,
                                                                 autoStart: false,
                                                                 afterComplete: function (instance) {
-                                                                    commands.cat('cat other.txt');
+                                                                    commands.cd('cd ..');
                                                                     func.scroll();
                                                                     new TypeIt('#input', {
-                                                                        strings: ['Back to the main directory', 'cd ..'],
+                                                                        strings: ['Let\'s see what I know', 'cd skills'],
                                                                         cursorChar: '_',
                                                                         speed: speed,
                                                                         breakLines: false,
                                                                         autoStart: false,
                                                                         afterComplete: function (instance) {
-                                                                            commands.cd('cd ..');
+                                                                            commands.cd('cd skills');
                                                                             func.scroll();
                                                                             new TypeIt('#input', {
-                                                                                strings: ['Let\'s see what I know', 'cd skills'],
+                                                                                strings: ['First with languages', 'cat languages.txt'],
                                                                                 cursorChar: '_',
                                                                                 speed: speed,
                                                                                 breakLines: false,
                                                                                 autoStart: false,
                                                                                 afterComplete: function (instance) {
-                                                                                    commands.cd('cd skills');
+                                                                                    commands.cat('cat languages.txt');
                                                                                     func.scroll();
                                                                                     new TypeIt('#input', {
-                                                                                        strings: ['First with languages', 'cat languages.txt'],
+                                                                                        strings: ['Then framework', 'cat frameworks.txt'],
                                                                                         cursorChar: '_',
                                                                                         speed: speed,
                                                                                         breakLines: false,
                                                                                         autoStart: false,
                                                                                         afterComplete: function (instance) {
-                                                                                            commands.cat('cat languages.txt');
+                                                                                            commands.cat('cat frameworks.txt');
                                                                                             func.scroll();
                                                                                             new TypeIt('#input', {
-                                                                                                strings: ['Then framework', 'cat frameworks.txt'],
+                                                                                                strings: ['Some misc that can be useful', 'cat other.txt'],
                                                                                                 cursorChar: '_',
                                                                                                 speed: speed,
                                                                                                 breakLines: false,
                                                                                                 autoStart: false,
                                                                                                 afterComplete: function (instance) {
-                                                                                                    commands.cat('cat frameworks.txt');
+                                                                                                    commands.cat('cat other.txt');
                                                                                                     func.scroll();
                                                                                                     new TypeIt('#input', {
-                                                                                                        strings: ['Some misc that can be useful', 'cat other.txt'],
+                                                                                                        strings: ['What about the "human" languages I know', 'cat humanLanguages.txt'],
                                                                                                         cursorChar: '_',
                                                                                                         speed: speed,
                                                                                                         breakLines: false,
                                                                                                         autoStart: false,
                                                                                                         afterComplete: function (instance) {
-                                                                                                            commands.cat('cat other.txt');
+                                                                                                            commands.cat('cat humanLanguages.txt');
                                                                                                             func.scroll();
                                                                                                             new TypeIt('#input', {
-                                                                                                                strings: ['What about the "human" languages I know', 'cat humanLanguages.txt'],
+                                                                                                                strings: ['And FINALLY my softskills', 'cat softSkills.txt'],
                                                                                                                 cursorChar: '_',
                                                                                                                 speed: speed,
                                                                                                                 breakLines: false,
                                                                                                                 autoStart: false,
                                                                                                                 afterComplete: function (instance) {
-                                                                                                                    commands.cat('cat humanLanguages.txt');
+                                                                                                                    commands.cat('cat softSkills.txt');
                                                                                                                     func.scroll();
                                                                                                                     new TypeIt('#input', {
-                                                                                                                        strings: ['And FINALLY my softskills', 'cat softSkills.txt'],
+                                                                                                                        strings: ['That\'s it I hope you liked it please scroll through my entire CV'],
                                                                                                                         cursorChar: '_',
                                                                                                                         speed: speed,
                                                                                                                         breakLines: false,
                                                                                                                         autoStart: false,
                                                                                                                         afterComplete: function (instance) {
-                                                                                                                            commands.cat('cat softSkills.txt');
+                                                                                                                            func.displayOutput('');
                                                                                                                             func.scroll();
-                                                                                                                            new TypeIt('#input', {
-                                                                                                                                strings: ['That\'s it I hope you liked it please scroll through my entire CV'],
-                                                                                                                                cursorChar: '_',
-                                                                                                                                speed: speed,
-                                                                                                                                breakLines: false,
-                                                                                                                                autoStart: false,
-                                                                                                                                afterComplete: function (instance) {
-                                                                                                                                    func.displayOutput('');
-                                                                                                                                    func.scroll();
-                                                                                                                                }
-                                                                                                                            }).destroy();
                                                                                                                         }
                                                                                                                     }).destroy();
                                                                                                                 }
@@ -303,8 +311,7 @@ let commands = {
                 }
             }).destroy();
         }
-    }
-
+    }).destroy();
 }
 
 

@@ -112,7 +112,7 @@ document.getElementById("bulb").addEventListener("click",func.changeColor);
 
 if (func.isMobile === true){
     console.log('Preseting in mobile mode');
-    commands.autopilot(true);
+    cmds.commands.autopilot(true);
 }else{
     console.log('Presenting not in mobile');
 }
