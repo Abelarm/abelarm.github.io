@@ -2,9 +2,9 @@ let data = {"Info":{
                     "about_txt":"Hi I'm Luigi Giugliano a 27 years old Researcher.<br>\
                                  I have all the passions to define myself a geek/nerd but I don't like labels (unless in datasets). <br>\
                                  I code, I read, I play and I travel, sometimes more that one at time. <br>",
-                    "contacts_txt":" <span class=\"fa fa-envelope\"></span> Email: <a href=\"mailto:luigi_giugliano@yahoo.it\">luigi_giugliano@yahoo.it</a><br> \
-                    <span class=\"fa fa-github\"></span> Github: <a target=\"_blank\" href=\"https://github.com/abelarm\">@abelarm</a><br>\
-                    <span class=\"fa fa-linkedin\"></span> LinkedIn: <a target=\"_blank\" href=\"https://www.linkedin.com/in/luigigiugliano/\">Luigi Giugliano</a>",
+                    "contacts_txt":" <span class=\"fa fa-envelope\"></span> Email: <a href=\"mailto:luigi_giugliano@yahoo.it\" rel=\"noreferrer\">luigi_giugliano@yahoo.it</a><br> \
+                    <span class=\"fa fa-github\"></span> Github: <a target=\"_blank\" href=\"https://github.com/abelarm\" rel=\"noreferrer\">@abelarm</a><br>\
+                    <span class=\"fa fa-linkedin\"></span> LinkedIn: <a target=\"_blank\" href=\"https://www.linkedin.com/in/luigigiugliano/\" rel=\"noreferrer\">Luigi Giugliano</a>",
                     "education_txt":"<div class=\"row\" style=\"width: 70%;  font-family: 'Ubuntu Mono'; font-size: 16px\"> \
                     <div class=\"col-sm-2\"> \
                         Sep-2014<br> \
@@ -56,7 +56,7 @@ let data = {"Info":{
                                             </ul> \
                                     </div> \
                                     <div style=\"text-align: right;\"> \
-                                        <a href=\"http://www.ismb.it/en\" target=\"_blank\">ISMB</a>, Turin \
+                                        <a href=\"http://www.ismb.it/en\" target=\"_blank\" rel=\"noreferrer\">ISMB</a>, Turin \
                                     </div> \
                                 </div> ---------------------------------------------------------------------------------------------------------------------------------------<br> \
                                 <div class=\"row\" style=\"width: 70%;  font-family: 'Ubuntu Mono'; font-size: 16px\"> \
@@ -72,7 +72,7 @@ let data = {"Info":{
                                             </ul> \
                                     </div> \
                                     <div style=\"text-align: right;\"> \
-                                        <a href=\"https://www.fcagroup.com/en-US/Pages/home.aspx\" target=\"_blank\">Fiat Chrysler Automobiles</a>, Turin \
+                                        <a href=\"https://www.fcagroup.com/en-US/Pages/home.aspx\" target=\"_blank\" rel=\"noreferrer\">Fiat Chrysler Automobiles</a>, Turin \
                                     </div> \
                                 </div> ---------------------------------------------------------------------------------------------------------------------------------------<br> \
                                 <div class=\"row\" style=\"width: 70%;  font-family: 'Ubuntu Mono'; font-size: 16px\"> \
@@ -88,7 +88,7 @@ let data = {"Info":{
                                             </ul> \
                                     </div> \
                                     <div style=\"text-align: right;\"> \
-                                        <a href=\"http://www.deustechnology.com/\" target=\"_blank\">Deus Technology</a>, Milan \
+                                        <a href=\"http://www.deustechnology.com/\" target=\"_blank\" rel=\"noreferrer\">Deus Technology</a>, Milan \
                                     </div> \
                                 </div>---------------------------------------------------------------------------------------------------------------------------------------<br> \
                                 <div class=\"row\" style=\"width: 70%;  font-family: 'Ubuntu Mono'; font-size: 16px\"> \
@@ -106,7 +106,7 @@ let data = {"Info":{
                                             </ul> \
                                     </div> \
                                     <div style=\"text-align: right;\"> \
-                                        <a href=\"https://www.ucl.ac.uk//\" target=\"_blank\">University College London</a>, London \
+                                        <a href=\"https://www.ucl.ac.uk//\" target=\"_blank\" rel=\"noreferrer\">University College London</a>, London \
                                     </div> \
                                 </div>",
                                 "other_txt": "<div class=\"row\" style=\"width: 70%;  font-family: 'Ubuntu Mono'; font-size: 16px\"> \
@@ -119,7 +119,7 @@ let data = {"Info":{
                                                         Provided support to the speakers of the conference and contributed to solve occured problems. \
                                                     </div> \
                                                     <div style=\"text-align: right;\"> \
-                                                        <a href=\"http://swedengamearena.com/\" target=\"_blank\">Sweden Game Arena</a>, Skövde \
+                                                        <a href=\"http://swedengamearena.com/\" target=\"_blank\" rel=\"noreferrer\">Sweden Game Arena</a>, Skövde \
                                                     </div> \
                                             </div>---------------------------------------------------------------------------------------------------------------------------------------<br> \
                                             <div class=\"row\" style=\"width: 70%;  font-family: 'Ubuntu Mono'; font-size: 16px\"> \
@@ -132,7 +132,7 @@ let data = {"Info":{
                                                         Hackaton for predicting frauds using a dataset of credit cards records. \
                                                     </div> \
                                                     <div style=\"text-align: right;\"> \
-                                                        <a href=\"http://www.labeconomia.unisa.it/sus2/\" target=\"_blank\">Stats under the Stars 2</a>, Salerno \
+                                                        <a href=\"http://www.labeconomia.unisa.it/sus2/\" target=\"_blank\" rel=\"noreferrer\">Stats under the Stars 2</a>, Salerno \
                                                     </div> \
                                             </div>---------------------------------------------------------------------------------------------------------------------------------------<br> \
                                             <div class=\"row\" style=\"width: 70%;  font-family: 'Ubuntu Mono'; font-size: 16px\"> \
@@ -145,7 +145,7 @@ let data = {"Info":{
                                                         Hackaton for defining the future of the food sector. \
                                                     </div> \
                                                     <div style=\"text-align: right;\"> \
-                                                        <a href=\"http://h-ack.com/food2016\" target=\"_blank\">H-Farm</a>, Treviso \
+                                                        <a href=\"http://h-ack.com/food2016\" target=\"_blank\" rel=\"noreferrer\">H-Farm</a>, Treviso \
                                                     </div> \
                                             </div>---------------------------------------------------------------------------------------------------------------------------------------<br> \
                                             <div class=\"row\" style=\"width: 70%;  font-family: 'Ubuntu Mono'; font-size: 16px\"> \
@@ -156,10 +156,10 @@ let data = {"Info":{
                                                         <b>Global Game Jam</b> \
                                                         <br> \
                                                         Developed an endless game in Unity3D in 48 hours, for the Global Game Jam.<br> \
-                                                        Game: Wasting Time <a href=\"https://globalgamejam.org/2015/games/wasting-time\"  target=\"_blank\">link</a> \
+                                                        Game: Wasting Time <a href=\"https://globalgamejam.org/2015/games/wasting-time\" target=\"_blank\" rel=\"noreferrer\">link</a> \
                                                     </div> \
                                                     <div style=\"text-align: right;\"> \
-                                                        <a href=\"https://globalgamejam.org/2015\" target=\"_blank\">IUDAV</a>, Salerno \
+                                                        <a href=\"https://globalgamejam.org/2015\" target=\"_blank\" rel=\"noreferrer\">IUDAV</a>, Salerno \
                                                     </div> \
                                             </div>"
                                 },
@@ -193,7 +193,7 @@ let data = {"Info":{
                                                         <img src=\"img/flask.png\"> Flask :<br>\
                                                         &nbsp;&nbsp;&nbsp;&nbsp; [================-----------------------------] 35%\
                                                     </div>",
-                                "realLanguages_txt": "<div style=\"font-family: 'Ubuntu Mono'; font-size: 20px\"> \
+                                "humanLanguages_txt": "<div style=\"font-family: 'Ubuntu Mono'; font-size: 20px\"> \
                                                     <img src=\"img/italy.png\"> Italian:<br>\
                                                     &nbsp;&nbsp;&nbsp;&nbsp; [=============================================] 100%<br> \
                                                     <img src=\"img/uk.png\"> English:<br>\
