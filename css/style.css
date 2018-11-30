@@ -63,3 +63,16 @@ body{
 a {
     cursor: url(../img/pixel_cursor.png), auto;
 }
+
+.progress-style {
+    background-color: chartreuse;
+    opacity: 0.6;
+    color: black;
+}
+
+.nopadding {
+    padding-left: 0 !important;
+    padding-right: 10 !important;
+    margin: 0 !important;
+    float: none;
+ }

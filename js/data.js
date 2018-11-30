@@ -205,14 +205,24 @@ let data = {"Info":{
                                                         [================-----------------------------] 35%\
                                                     </div>",
                                 "humanLanguages_txt": "<div style=\"font-family: 'Ubuntu Mono'; font-size: 20px\"> \
-                                                    <img src=\"img/italy.png\"> Italian :<br>\
-                                                    [=============================================] 100%\
-                                                    <br> \
-                                                    <img src=\"img/uk.png\"> English :<br>\
-                                                    [=======================================------] 85%\
-                                                    <br> \
-                                                    <img src=\"img/spain.png\"> Spanish :<br>\
-                                                    [=========------------------------------------] 35%\
+                                                    <div class=\"col-sm-8 nopadding\"> \
+                                                        <img src=\"img/italy.png\"> Italian :<br>\
+                                                        <div class=\"progress progress\"> \
+                                                            <div class=\"progress-bar progress-style\" role=\"progressbar\" style=\"width: 100%;\" aria-valuenow=\"100\" aria-valuemin=\"0\" aria-valuemax=\"100\">100%</div> \
+                                                        </div> \
+                                                    </div> \
+                                                    <div class=\"col-sm-8 nopadding\"> \
+                                                        <img src=\"img/uk.png\"> English :<br>\
+                                                        <div class=\"progress progress\"> \
+                                                            <div class=\"progress-bar progress-style\" role=\"progressbar\" style=\"width: 85%;\" aria-valuenow=\"100\" aria-valuemin=\"0\" aria-valuemax=\"100\">85%</div> \
+                                                        </div> \
+                                                    </div> \
+                                                    <div class=\"col-sm-8 nopadding\"> \
+                                                        <img src=\"img/spain.png\"> Spanish :<br>\
+                                                        <div class=\"progress progress\"> \
+                                                            <div class=\"progress-bar progress-style\" role=\"progressbar\" style=\"width: 30%;\" aria-valuenow=\"100\" aria-valuemin=\"0\" aria-valuemax=\"100\">30%</div> \
+                                                        </div> \
+                                                    </div> \
                                                 </div>",
                                 "other_txt": "d3.js - bootstrap - vue.js - html - docker - latex - android - bash",
                                 "softSkills_txt": "- Curious and interested in learning and trying new things <br> \
