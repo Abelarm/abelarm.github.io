@@ -173,7 +173,7 @@ function startAutopilot(){
                         // afterStep: ()=>{func.scroll()},
                         speed: speed,
                         breakLines: false,
-                        autoStart: false,
+                        autoStart: true,
                         afterComplete: function (instance) {
                             commands.cat('cat contacts.txt');
                             // func.scroll();

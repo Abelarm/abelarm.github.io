@@ -1,7 +1,7 @@
 let data = {"Info":{
                     "about_txt":"Hi I'm Luigi Giugliano a 27 years old Researcher.<br>\
                                  I have all the passions to define myself a geek/nerd but I don't like labels (unless in datasets). <br>\
-                                 I code, I read, I play and I travel, sometimes more that one at time. <br>",
+                                 I code, I read, I play and I travel, sometimes more than one at time. <br>",
                     "contacts_txt":" <span class=\"fa fa-envelope\"></span> Email: <a href=\"mailto:luigi_giugliano@yahoo.it\" rel=\"noreferrer\">luigi_giugliano@yahoo.it</a><br> \
                     <span class=\"fa fa-github\"></span> Github: <a target=\"_blank\" href=\"https://github.com/abelarm\" rel=\"noreferrer\">@abelarm</a><br>\
                     <span class=\"fa fa-linkedin\"></span> LinkedIn: <a target=\"_blank\" href=\"https://www.linkedin.com/in/luigigiugliano/\" rel=\"noreferrer\">Luigi Giugliano</a>",
