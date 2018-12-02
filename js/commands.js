@@ -158,7 +158,7 @@ function startAutopilot(){
         afterComplete: function (instance) {
             func.displayOutput('');
             new TypeIt('#input', {
-                strings: ['First some information about me', 'cat about.txt'],
+                strings: ['First some information about me'],
                 cursorChar: '_',
                 // afterStep: ()=>{func.scroll()},
                 speed: speed,
@@ -168,7 +168,7 @@ function startAutopilot(){
                     commands.cat('cat about.txt');
                     // func.scroll();
                     new TypeIt('#input', {
-                        strings: ['cat contacts.txt'],
+                        strings: ['My contacts:'],
                         cursorChar: '_',
                         // afterStep: ()=>{func.scroll()},
                         speed: speed,
@@ -178,7 +178,7 @@ function startAutopilot(){
                             commands.cat('cat contacts.txt');
                             // func.scroll();
                             new TypeIt('#input', {
-                                strings: ['Now I\'ll show you my education', 'cat education.txt'],
+                                strings: ['Now I\'ll show you my education: '],
                                 cursorChar: '_',
                                 // afterStep: ()=>{func.scroll()},
                                 speed: speed,
@@ -188,7 +188,7 @@ function startAutopilot(){
                                     commands.cat('cat education.txt');
                                     // func.scroll();
                                     new TypeIt('#input', {
-                                        strings: ['Let\'s move to the experiences directory', 'cd experiences'],
+                                        strings: ['Let\'s move to the experiences directory'],
                                         cursorChar: '_',
                                         // afterStep: ()=>{func.scroll()},
                                         speed: speed,
@@ -198,7 +198,7 @@ function startAutopilot(){
                                             commands.cd('cd experiences');
                                             // func.scroll();
                                             new TypeIt('#input', {
-                                                strings: ['Work experience', 'cat vocational.txt'],
+                                                strings: ['Work experiences:'],
                                                 cursorChar: '_',
                                                 // afterStep: ()=>{func.scroll()},
                                                 speed: speed,
@@ -208,7 +208,7 @@ function startAutopilot(){
                                                     commands.cat('cat vocational.txt');
                                                     // func.scroll();
                                                     new TypeIt('#input', {
-                                                        strings: ['Other experience', 'cat other.txt'],
+                                                        strings: ['Other experiences:'],
                                                         cursorChar: '_',
                                                         // afterStep: ()=>{func.scroll()},
                                                         speed: speed,
@@ -218,7 +218,7 @@ function startAutopilot(){
                                                             commands.cat('cat other.txt');
                                                             // func.scroll();
                                                             new TypeIt('#input', {
-                                                                strings: ['Back to the main directory', 'cd ..'],
+                                                                strings: ['Back to the main directory'],
                                                                 cursorChar: '_',
                                                                 // afterStep: ()=>{func.scroll()},
                                                                 speed: speed,
@@ -228,7 +228,7 @@ function startAutopilot(){
                                                                     commands.cd('cd ..');
                                                                     // func.scroll();
                                                                     new TypeIt('#input', {
-                                                                        strings: ['Let\'s see what I know', 'cd skills'],
+                                                                        strings: ['Let\'s see what I know'],
                                                                         cursorChar: '_',
                                                                         // afterStep: ()=>{func.scroll()},
                                                                         speed: speed,
@@ -238,7 +238,7 @@ function startAutopilot(){
                                                                             commands.cd('cd skills');
                                                                             // func.scroll();
                                                                             new TypeIt('#input', {
-                                                                                strings: ['First with languages', 'cat languages.txt'],
+                                                                                strings: ['First with languages:'],
                                                                                 cursorChar: '_',
                                                                                 // afterStep: ()=>{func.scroll()},
                                                                                 speed: speed,
@@ -248,7 +248,7 @@ function startAutopilot(){
                                                                                     commands.cat('cat languages.txt');
                                                                                     // func.scroll();
                                                                                     new TypeIt('#input', {
-                                                                                        strings: ['Then framework', 'cat frameworks.txt'],
+                                                                                        strings: ['Then frameworks: '],
                                                                                         cursorChar: '_',
                                                                                         // afterStep: ()=>{func.scroll()},
                                                                                         speed: speed,
@@ -258,7 +258,7 @@ function startAutopilot(){
                                                                                             commands.cat('cat frameworks.txt');
                                                                                             // func.scroll();
                                                                                             new TypeIt('#input', {
-                                                                                                strings: ['Some misc that can be useful', 'cat other.txt'],
+                                                                                                strings: ['Some misc that can be useful'],
                                                                                                 cursorChar: '_',
                                                                                                 // afterStep: ()=>{func.scroll()},
                                                                                                 speed: speed,
@@ -268,7 +268,7 @@ function startAutopilot(){
                                                                                                     commands.cat('cat other.txt');
                                                                                                     // func.scroll();
                                                                                                     new TypeIt('#input', {
-                                                                                                        strings: ['What about the "human" languages I know', 'cat humanLanguages.txt'],
+                                                                                                        strings: ['What about the "human" languages:'],
                                                                                                         cursorChar: '_',
                                                                                                         // afterStep: ()=>{func.scroll()},
                                                                                                         speed: speed,
@@ -278,7 +278,7 @@ function startAutopilot(){
                                                                                                             commands.cat('cat humanLanguages.txt');
                                                                                                             // func.scroll();
                                                                                                             new TypeIt('#input', {
-                                                                                                                strings: ['And FINALLY my softskills', 'cat softSkills.txt'],
+                                                                                                                strings: ['And FINALLY my softskills: '],
                                                                                                                 cursorChar: '_',
                                                                                                                 // afterStep: ()=>{func.scroll()},
                                                                                                                 speed: speed,
@@ -288,7 +288,7 @@ function startAutopilot(){
                                                                                                                     commands.cat('cat softSkills.txt');
                                                                                                                     // func.scroll();
                                                                                                                     new TypeIt('#input', {
-                                                                                                                        strings: ['Last but not least my passions', 'cd ..'],
+                                                                                                                        strings: ['Last but not least my passions: '],
                                                                                                                         cursorChar: '_',
                                                                                                                         // afterStep: ()=>{func.scroll()},
                                                                                                                         speed: speed,
@@ -296,6 +296,7 @@ function startAutopilot(){
                                                                                                                         autoStart: false,
                                                                                                                         afterComplete: function (instance) {
                                                                                                                             commands.cd('cd ..');
+                                                                                                                            commands.cat('cat passion-interest.txt');
                                                                                                                             new TypeIt('#input', {
                                                                                                                                 strings: ['cat passion-interest.txt'],
                                                                                                                                 cursorChar: '_',
@@ -304,7 +305,6 @@ function startAutopilot(){
                                                                                                                                 breakLines: false,
                                                                                                                                 autoStart: false,
                                                                                                                                 afterComplete: function (instance) {
-                                                                                                                                    commands.cat('cat passion-interest.txt');
                                                                                                                                     new TypeIt('#input', {
                                                                                                                                         strings: ['That\'s it I hope you liked it please scroll through my entire CV'],
                                                                                                                                         cursorChar: '_',

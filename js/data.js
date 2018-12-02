@@ -2,7 +2,7 @@ let data = {"Info":{
                     "about_txt":"Hi I'm Luigi Giugliano a 27 years old Researcher.<br>\
                                  I have all the passions to define myself a geek/nerd but I don't like labels (unless in datasets). <br>\
                                  I code, I read, I play and I travel, sometimes more than one at time. <br>",
-                    "contacts_txt":" <span class=\"fa fa-envelope\"></span> Email: <a href=\"mailto:luigi_giugliano@yahoo.it\" rel=\"noreferrer\">luigi_giugliano@yahoo.it</a><br> \
+                    "contacts_txt":" <span class=\"fa fa-envelope\"></span> Email: <a href=\"mailto:luigi_giugliano@yahoo.it\" rel=\"noreferrer\">luigi_giugliano at yahoo dot it</a><br> \
                     <span class=\"fa fa-github\"></span> Github: <a target=\"_blank\" href=\"https://github.com/abelarm\" rel=\"noreferrer\">@abelarm</a><br>\
                     <span class=\"fa fa-linkedin\"></span> LinkedIn: <a target=\"_blank\" href=\"https://www.linkedin.com/in/luigigiugliano/\" rel=\"noreferrer\">Luigi Giugliano</a>",
                     "education_txt":" \
@@ -176,48 +176,70 @@ let data = {"Info":{
                                 },
                     "skills":{
                                 "languages_txt": "<div style=\"font-family: 'Ubuntu Mono'; font-size: 20px\"> \
-                                                    <img src=\"img/py.png\"> python :<br>\
-                                                    [===================================----------] 70%<br> \
-                                                    <img src=\"img/c.png\">, \
-                                                    <img src=\"img/cpp.png\">, \
-                                                    <img src=\"img/js.png\"> javascript :<br>\
-                                                    [============================-----------------] 60%\
-                                                    <br> \
-                                                    <img src=\"img/sql.png\"> SQL, \
-                                                    <img src=\"img/matlab.png\"> Matlab, \
-                                                    <img src=\"img/csharp.png\">, \
-                                                    <img src=\"img/java.png\"> Java :<br>\
-                                                    [==================---------------------------] 40%\
+                                                    <div class=\"col-sm-4 nopadding\"> \
+                                                        <img src=\"img/py.png\"> python :<br>\
+                                                        <div class=\"progress progress\"> \
+                                                            <div class=\"progress-bar progress-style\" role=\"progressbar\" style=\"width: 70%;\" aria-valuenow=\"70\" aria-valuemin=\"0\" aria-valuemax=\"100\">70%</div> \
+                                                        </div> \
+                                                    </div> \
+                                                    <div class=\"col-sm-4 nopadding\"> \
+                                                        <img src=\"img/c.png\">, \
+                                                        <img src=\"img/cpp.png\">, \
+                                                        <img src=\"img/js.png\"> javascript :<br>\
+                                                        <div class=\"progress progress\"> \
+                                                                <div class=\"progress-bar progress-style\" role=\"progressbar\" style=\"width: 60%;\" aria-valuenow=\"60\" aria-valuemin=\"0\" aria-valuemax=\"100\">60%</div> \
+                                                        </div> \
+                                                    </div> \
+                                                    <div class=\"col-sm-4 nopadding\"> \
+                                                        <img src=\"img/sql.png\"> SQL, \
+                                                        <img src=\"img/matlab.png\"> Matlab, \
+                                                        <img src=\"img/csharp.png\">, \
+                                                        <img src=\"img/java.png\"> Java :<br>\
+                                                        <div class=\"progress progress\"> \
+                                                            <div class=\"progress-bar progress-style\" role=\"progressbar\" style=\"width: 40%;\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\">40%</div> \
+                                                        </div> \
+                                                    </div> \
                                                   </div>",
                                                 
                                 "frameworks_txt": "<div style=\"font-family: 'Ubuntu Mono'; font-size: 20px\"> \
-                                                        <img src=\"img/tf.png\"> Tensorflow, \
-                                                        <img src=\"img/ks.jpg\"> Keras, \
-                                                        <img src=\"img/sci.png\"> scikit-learn :<br>\
-                                                        [============================-----------------] 60%<br> \
-                                                        <img src=\"img/node.svg\" style=\"width:2.5%\"> Node.js, \
-                                                        <img src=\"img/unity.png\"> Unity :<br>\
-                                                        [=======================----------------------] 50%\
-                                                        <br> \
-                                                        <img src=\"img/cuda.png\"> CUDA, \
-                                                        <img src=\"img/hdp.png\"> Hadoop, \
-                                                        <img src=\"img/flask.png\"> Flask :<br>\
-                                                        [================-----------------------------] 35%\
+                                                        <div class=\"col-sm-4 nopadding\"> \
+                                                            <img src=\"img/tf.png\"> Tensorflow, \
+                                                            <img src=\"img/ks.jpg\"> Keras, \
+                                                            <img src=\"img/sci.png\"> scikit-learn :<br>\
+                                                            <div class=\"progress progress\"> \
+                                                                <div class=\"progress-bar progress-style\" role=\"progressbar\" style=\"width: 60%;\" aria-valuenow=\"60\" aria-valuemin=\"0\" aria-valuemax=\"100\">60%</div> \
+                                                            </div> \
+                                                        </div> \
+                                                        <div class=\"col-sm-4 nopadding\"> \
+                                                            <img src=\"img/node.svg\" style=\"width:6%\"> Node.js, \
+                                                            <img src=\"img/unity.png\"> Unity :<br>\
+                                                            <div class=\"progress progress\"> \
+                                                                <div class=\"progress-bar progress-style\" role=\"progressbar\" style=\"width: 50%;\" aria-valuenow=\"50\" aria-valuemin=\"0\" aria-valuemax=\"100\">50%</div> \
+                                                            </div> \
+                                                        </div> \
+                                                        <div class=\"col-sm-4 nopadding\"> \
+                                                            <img src=\"img/cuda.png\"> CUDA, \
+                                                            <img src=\"img/hdp.png\"> Hadoop, \
+                                                            <img src=\"img/flask.png\"> Flask :<br>\
+                                                            <div class=\"progress progress\"> \
+                                                                <div class=\"progress-bar progress-style\" role=\"progressbar\" style=\"width: 35%;\" aria-valuenow=\"35\" aria-valuemin=\"0\" aria-valuemax=\"100\">35%</div> \
+                                                            </div> \
+                                                        </div> \
                                                     </div>",
                                 "humanLanguages_txt": "<div style=\"font-family: 'Ubuntu Mono'; font-size: 20px\"> \
-                                                    <div class=\"col-sm-8 nopadding\"> \
+                                                    <div class=\"col-sm-4 nopadding\"> \
                                                         <img src=\"img/italy.png\"> Italian :<br>\
                                                         <div class=\"progress progress\"> \
                                                             <div class=\"progress-bar progress-style\" role=\"progressbar\" style=\"width: 100%;\" aria-valuenow=\"100\" aria-valuemin=\"0\" aria-valuemax=\"100\">100%</div> \
                                                         </div> \
                                                     </div> \
-                                                    <div class=\"col-sm-8 nopadding\"> \
+                                                    <div class=\"col-sm-4 nopadding\"> \
                                                         <img src=\"img/uk.png\"> English :<br>\
                                                         <div class=\"progress progress\"> \
                                                             <div class=\"progress-bar progress-style\" role=\"progressbar\" style=\"width: 85%;\" aria-valuenow=\"100\" aria-valuemin=\"0\" aria-valuemax=\"100\">85%</div> \
                                                         </div> \
                                                     </div> \
-                                                    <div class=\"col-sm-8 nopadding\"> \
+                                                    <div class=\"col-sm-4 nopadding\"> \
                                                         <img src=\"img/spain.png\"> Spanish :<br>\
                                                         <div class=\"progress progress\"> \
                                                             <div class=\"progress-bar progress-style\" role=\"progressbar\" style=\"width: 30%;\" aria-valuenow=\"100\" aria-valuemin=\"0\" aria-valuemax=\"100\">30%</div> \
