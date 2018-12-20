@@ -76,3 +76,7 @@ a {
     margin: 0 !important;
     float: none;
  }
+
+ .row {
+  margin-right: 0px !important;  
+ }

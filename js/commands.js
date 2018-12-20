@@ -296,7 +296,6 @@ function startAutopilot(){
                                                                                                                         autoStart: false,
                                                                                                                         afterComplete: function (instance) {
                                                                                                                             commands.cd('cd ..');
-                                                                                                                            commands.cat('cat passion-interest.txt');
                                                                                                                             new TypeIt('#input', {
                                                                                                                                 strings: ['cat passion-interest.txt'],
                                                                                                                                 cursorChar: '_',
@@ -305,6 +304,7 @@ function startAutopilot(){
                                                                                                                                 breakLines: false,
                                                                                                                                 autoStart: false,
                                                                                                                                 afterComplete: function (instance) {
+                                                                                                                                    commands.cat('cat passion-interest.txt');
                                                                                                                                     new TypeIt('#input', {
                                                                                                                                         strings: ['That\'s it I hope you liked it please scroll through my entire CV'],
                                                                                                                                         cursorChar: '_',
