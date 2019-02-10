@@ -129,15 +129,27 @@ function errorMessage(x){
 function changeColor(){
     let colors = {"rgb(255, 255, 255)":"rgb(51, 51, 51)","rgb(51, 51, 51)":"rgb(255, 255, 255)"};
     let bulb = {"brightness(1) invert(0)":"brightness(0) invert(1)","brightness(0) invert(1)":"brightness(1) invert(0)"};
-    if(document.body.style.backgroundColor!="" && document.body.style.color!="" && document.getElementById("bulb").style.filter!=""){
+
+    let app_bar_col = $("#upp-bar_and").attr("content") === "#ffffff" && $("#upp-bar_ios").attr("content") === "default"
+    console.log(app_bar_col)
+
+    if(document.body.style.backgroundColor!="" && document.body.style.color!="" && document.getElementById("bulb").style.filter!="" 
+       && app_bar_col){
+        console.log("entro1");
         document.body.style.backgroundColor = colors[document.body.style.backgroundColor];
         document.body.style.color = colors[document.body.style.color];
         document.getElementById("bulb").style.filter = bulb[document.getElementById("bulb").style.filter];
+        $("#upp-bar_and")[0].setAttribute("content", "#333");
+        $("#upp-bar_ios")[0].setAttribute("content", "black-translucent");
+
+    }else{
+        console.log("entro2");
+        document.body.style.backgroundColor = "#fff";
+        document.body.style.color = "#333";
+        document.getElementById("bulb").style.filter = "brightness(1) invert(0)";
+        $("#upp-bar_and")[0].setAttribute("content", "#ffffff");
+        $("#upp-bar_ios")[0].setAttribute("content", "default");
         
-}else{
-    document.body.style.backgroundColor = "#fff";
-    document.body.style.color = "#333";
-    document.getElementById("bulb").style.filter = "brightness(1) invert(0)";
     }
 };
 
