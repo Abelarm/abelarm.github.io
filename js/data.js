@@ -55,13 +55,16 @@ let data = {"Info":{
                                     <div class=\"col-sm-6\" > \
                                         <b>Machine Learning Researcher</b> \
                                             <ul> \
-                                                <li> Working as Machine Learning and Deep Learning Researcher on H2020 EU-funded projects. \
-                                                <br> - Keras, Tensorflow \
-                                                <br> - Docker \
+                                                <li> Worked on European(H2020) projects both as developer and WP-leader. Attended as company representative in several consortium meetings and conferences.  \
+                                                <br> - WP-leader in COMPOSITION project. For the same project developed (trained, tested and deployed) a Deep Learning solution for predictive maintenance of a machinery present in the shop floor of one of the partners. \
+                                                <br> - Python \
+                                                <br> - Tensorflow, Keras, scikit-learn \
+                                                <br> - Microservices, Docker, REST API \
+                                                <br> - JIRA, Git \
                                             </ul> \
                                     </div> \
                                     <div class=\"col-sm-2 align-self-end\"> \
-                                        <a href=\"http://www.ismb.it/en\" target=\"_blank\" rel=\"noreferrer\">ISMB</a>, Turin \
+                                        <a href=\"https://linksfoundation.com/en/\" target=\"_blank\" rel=\"noreferrer\">LINKS</a>, Turin \
                                     </div> \
                                 </div> \
                                 <div class=\"text-center\" > //------------------------// </div> \
