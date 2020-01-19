@@ -122,14 +122,6 @@ let commands = {
         }
     },
     "autopilot":(phone=false)=>{  
-        new TypeIt('#inputt', {
-            strings: "This will be typed!"
-        }).go().destroy(removeCursor = true);
-
-        if (current_dir != "/"){
-            commands.cd("cd");
-        } 
-        commands.clear();
         speed = 75;
         document.getElementById('blinker').style ='display:none;';
         if (phone === true){
@@ -146,7 +138,6 @@ let commands = {
             }).go().destroy(removeCursor = true);
         }
         else{
-            func.displayOutput();
             startAutopilot();
         }
         
@@ -154,7 +145,11 @@ let commands = {
 
 }
 
-function startAutopilot(){  
+function startAutopilot(){ 
+    if (current_dir != "/"){
+        commands.cd("cd");
+    } 
+    commands.clear("clear");
     speed = 75;
     new TypeIt('#input', {
         strings: ['Hi you selected the \"autopilot\" mode ', 'My resume will be printed out, enjoy the journey :)'],
@@ -359,7 +354,7 @@ function startAutopilot(){
                 }
             }).go().destroy(removeCursor = true);
         }
-    }).go().destroy(removeCursor = true).destroy(removeCursor = true);
+    }).go().destroy(removeCursor = true);
 }
 
 
