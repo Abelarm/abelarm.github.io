@@ -1,7 +1,3 @@
-require("babel-core/register");
-require("babel-polyfill");
-
-
 // loading data with Promise
 
 var dStore = require("./dataStore.js");
@@ -114,6 +110,7 @@ document.getElementById("bulb").addEventListener("click",func.changeColor);
 if (func.isMobile() === true){
     console.log('Preseting in mobile mode');
     document.getElementById('help').style = 'display:none';
+    document.querySelectorAll(`[data-termynal]`)[0].style='height: 100vh; width: 100%;'
     cmds.commands.autopilot(true);
 }else{
     console.log('Presenting desktop mode');

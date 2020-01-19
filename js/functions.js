@@ -133,19 +133,48 @@ function changeColor(){
     let app_bar_col = $("#upp-bar_and").attr("content") === "#ffffff" && $("#upp-bar_ios").attr("content") === "default"
     console.log(app_bar_col)
 
-    if(document.body.style.backgroundColor!="" && document.body.style.color!="" && document.getElementById("bulb").style.filter!="" 
-       && app_bar_col){
+    if(getComputedStyle(document.documentElement)
+    .getPropertyValue('--theme') == 'light' ){
         console.log("entro1");
-        document.body.style.backgroundColor = colors[document.body.style.backgroundColor];
-        document.body.style.color = colors[document.body.style.color];
+
+        document.documentElement.style
+        .setProperty('--theme', 'dark');
+
+        document.documentElement.style
+        .setProperty('--color-bg', '#252a33');
+        document.documentElement.style
+        .setProperty('--color-text', '#eee');
+        document.documentElement.style
+        .setProperty('--color-text-title', '#0B5351');
+        document.documentElement.style
+        .setProperty('--color-text-path', '#B2FFA9');
+        document.documentElement.style
+        .setProperty('--color-background', '#1a1e24');
+
+        
+
+
         document.getElementById("bulb").style.filter = bulb[document.getElementById("bulb").style.filter];
-        $("#upp-bar_and")[0].setAttribute("content", "#333");
+        $("#upp-bar_and")[0].setAttribute("content", "#1a1e24");
         $("#upp-bar_ios")[0].setAttribute("content", "black-translucent");
 
     }else{
         console.log("entro2");
-        document.body.style.backgroundColor = "#fff";
-        document.body.style.color = "#333";
+
+        document.documentElement.style
+        .setProperty('--theme', 'light');
+
+        document.documentElement.style
+        .setProperty('--color-bg', '#ddd');
+        document.documentElement.style
+        .setProperty('--color-text', '#1a1e24');
+        document.documentElement.style
+        .setProperty('--color-text-title', '#d76d77');
+        document.documentElement.style
+        .setProperty('--color-text-path', '#725AC1');
+        document.documentElement.style
+        .setProperty('--color-background', 'linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b)');
+        
         document.getElementById("bulb").style.filter = "brightness(1) invert(0)";
         $("#upp-bar_and")[0].setAttribute("content", "#ffffff");
         $("#upp-bar_ios")[0].setAttribute("content", "default");

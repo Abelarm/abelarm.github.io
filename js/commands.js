@@ -121,7 +121,15 @@ let commands = {
             func.errorMessage(x);
         }
     },
-    "autopilot":(phone=false)=>{   
+    "autopilot":(phone=false)=>{  
+        new TypeIt('#inputt', {
+            strings: "This will be typed!"
+        }).go().destroy(removeCursor = true);
+
+        if (current_dir != "/"){
+            commands.cd("cd");
+        } 
+        commands.clear();
         speed = 75;
         document.getElementById('blinker').style ='display:none;';
         if (phone === true){
@@ -130,12 +138,12 @@ let commands = {
                 cursorChar: '_',
                 speed: speed,
                 breakLines: false,
-                autoStart: false,
+                waitUntilVisible: true,
                 afterComplete: function (instance) {
                     func.displayOutput('');
                     startAutopilot();
                 }
-            }).destroy();
+            }).go().destroy(removeCursor = true);
         }
         else{
             func.displayOutput();
@@ -146,7 +154,7 @@ let commands = {
 
 }
 
-function startAutopilot(){   
+function startAutopilot(){  
     speed = 75;
     new TypeIt('#input', {
         strings: ['Hi you selected the \"autopilot\" mode ', 'My resume will be printed out, enjoy the journey :)'],
@@ -154,7 +162,7 @@ function startAutopilot(){
         // afterStep: ()=>{func.scroll()},
         speed: speed,
         breakLines: false,
-        autoStart: false,
+        waitUntilVisible: true,
         afterComplete: function (instance) {
             func.displayOutput('');
             new TypeIt('#input', {
@@ -163,7 +171,7 @@ function startAutopilot(){
                 // afterStep: ()=>{func.scroll()},
                 speed: speed,
                 breakLines: false,
-                autoStart: false,
+                waitUntilVisible: true,
                 afterComplete: function (instance) {
                     commands.cat('cat about.txt');
                     // func.scroll();
@@ -173,17 +181,18 @@ function startAutopilot(){
                         // afterStep: ()=>{func.scroll()},
                         speed: speed,
                         breakLines: false,
-                        autoStart: true,
+                        waitUntilVisible: true,
                         afterComplete: function (instance) {
                             commands.cat('cat contacts.txt');
                             // func.scroll();
+                            console.log($('#input'));
                             new TypeIt('#input', {
                                 strings: ['Now I\'ll show you my education: '],
                                 cursorChar: '_',
                                 // afterStep: ()=>{func.scroll()},
                                 speed: speed,
                                 breakLines: false,
-                                autoStart: false,
+                                waitUntilVisible: true,
                                 afterComplete: function (instance) {
                                     commands.cat('cat education.txt');
                                     // func.scroll();
@@ -193,7 +202,7 @@ function startAutopilot(){
                                         // afterStep: ()=>{func.scroll()},
                                         speed: speed,
                                         breakLines: false,
-                                        autoStart: false,
+                                        waitUntilVisible: true,
                                         afterComplete: function (instance) {
                                             commands.cd('cd experiences');
                                             // func.scroll();
@@ -203,7 +212,7 @@ function startAutopilot(){
                                                 // afterStep: ()=>{func.scroll()},
                                                 speed: speed,
                                                 breakLines: false,
-                                                autoStart: false,
+                                                waitUntilVisible: true,
                                                 afterComplete: function (instance) {
                                                     commands.cat('cat vocational.txt');
                                                     // func.scroll();
@@ -213,7 +222,7 @@ function startAutopilot(){
                                                         // afterStep: ()=>{func.scroll()},
                                                         speed: speed,
                                                         breakLines: false,
-                                                        autoStart: false,
+                                                        waitUntilVisible: true,
                                                         afterComplete: function (instance) {
                                                             commands.cat('cat other.txt');
                                                             // func.scroll();
@@ -223,7 +232,7 @@ function startAutopilot(){
                                                                 // afterStep: ()=>{func.scroll()},
                                                                 speed: speed,
                                                                 breakLines: false,
-                                                                autoStart: false,
+                                                                waitUntilVisible: true,
                                                                 afterComplete: function (instance) {
                                                                     commands.cd('cd ..');
                                                                     // func.scroll();
@@ -233,7 +242,7 @@ function startAutopilot(){
                                                                         // afterStep: ()=>{func.scroll()},
                                                                         speed: speed,
                                                                         breakLines: false,
-                                                                        autoStart: false,
+                                                                        waitUntilVisible: true,
                                                                         afterComplete: function (instance) {
                                                                             commands.cd('cd skills');
                                                                             // func.scroll();
@@ -243,7 +252,7 @@ function startAutopilot(){
                                                                                 // afterStep: ()=>{func.scroll()},
                                                                                 speed: speed,
                                                                                 breakLines: false,
-                                                                                autoStart: false,
+                                                                                waitUntilVisible: true,
                                                                                 afterComplete: function (instance) {
                                                                                     commands.cat('cat languages.txt');
                                                                                     // func.scroll();
@@ -253,7 +262,7 @@ function startAutopilot(){
                                                                                         // afterStep: ()=>{func.scroll()},
                                                                                         speed: speed,
                                                                                         breakLines: false,
-                                                                                        autoStart: false,
+                                                                                        waitUntilVisible: true,
                                                                                         afterComplete: function (instance) {
                                                                                             commands.cat('cat frameworks.txt');
                                                                                             // func.scroll();
@@ -263,7 +272,7 @@ function startAutopilot(){
                                                                                                 // afterStep: ()=>{func.scroll()},
                                                                                                 speed: speed,
                                                                                                 breakLines: false,
-                                                                                                autoStart: false,
+                                                                                                waitUntilVisible: true,
                                                                                                 afterComplete: function (instance) {
                                                                                                     commands.cat('cat other.txt');
                                                                                                     // func.scroll();
@@ -273,7 +282,7 @@ function startAutopilot(){
                                                                                                         // afterStep: ()=>{func.scroll()},
                                                                                                         speed: speed,
                                                                                                         breakLines: false,
-                                                                                                        autoStart: false,
+                                                                                                        waitUntilVisible: true,
                                                                                                         afterComplete: function (instance) {
                                                                                                             commands.cat('cat humanLanguages.txt');
                                                                                                             // func.scroll();
@@ -283,7 +292,7 @@ function startAutopilot(){
                                                                                                                 // afterStep: ()=>{func.scroll()},
                                                                                                                 speed: speed,
                                                                                                                 breakLines: false,
-                                                                                                                autoStart: false,
+                                                                                                                waitUntilVisible: true,
                                                                                                                 afterComplete: function (instance) {
                                                                                                                     commands.cat('cat softSkills.txt');
                                                                                                                     // func.scroll();
@@ -293,7 +302,7 @@ function startAutopilot(){
                                                                                                                         // afterStep: ()=>{func.scroll()},
                                                                                                                         speed: speed,
                                                                                                                         breakLines: false,
-                                                                                                                        autoStart: false,
+                                                                                                                        waitUntilVisible: true,
                                                                                                                         afterComplete: function (instance) {
                                                                                                                             commands.cd('cd ..');
                                                                                                                             new TypeIt('#input', {
@@ -302,7 +311,7 @@ function startAutopilot(){
                                                                                                                                 // afterStep: ()=>{func.scroll()},
                                                                                                                                 speed: speed,
                                                                                                                                 breakLines: false,
-                                                                                                                                autoStart: false,
+                                                                                                                                waitUntilVisible: true,
                                                                                                                                 afterComplete: function (instance) {
                                                                                                                                     commands.cat('cat passion-interest.txt');
                                                                                                                                     new TypeIt('#input', {
@@ -311,46 +320,46 @@ function startAutopilot(){
                                                                                                                                         // afterStep: ()=>{func.scroll()},
                                                                                                                                         speed: speed,
                                                                                                                                         breakLines: false,
-                                                                                                                                        autoStart: false,
+                                                                                                                                        waitUntilVisible: true,
                                                                                                                                         afterComplete: function (instance) {
                                                                                                                                             func.displayOutput('');
                                                                                                                                             // func.scroll();
                                                                                                                                         }
-                                                                                                                                    }).destroy();
+                                                                                                                                    }).go().destroy(removeCursor = true);
                                                                                                                                     // func.scroll();
                                                                                                                                 }
-                                                                                                                            }).destroy();
+                                                                                                                            }).go().destroy(removeCursor = true);
                                                                                                                         
                                                                                                                         }
-                                                                                                                    }).destroy();
+                                                                                                                    }).go().destroy(removeCursor = true);
                                                                                                                 }
-                                                                                                            }).destroy();
+                                                                                                            }).go().destroy(removeCursor = true);
                                                                                                         }
-                                                                                                    }).destroy();
+                                                                                                    }).go().destroy(removeCursor = true);
                                                                                                 }
-                                                                                            }).destroy();
+                                                                                            }).go().destroy(removeCursor = true);
                                                                                         }
-                                                                                    }).destroy();
+                                                                                    }).go().destroy(removeCursor = true);
                                                                                 }
-                                                                            }).destroy();
+                                                                            }).go().destroy(removeCursor = true);
                                                                         }
-                                                                    }).destroy();
+                                                                    }).go().destroy(removeCursor = true);
                                                                 }
-                                                            }).destroy();
+                                                            }).go().destroy(removeCursor = true);
                                                         }
-                                                    }).destroy();
+                                                    }).go().destroy(removeCursor = true);
                                                 }
-                                            }).destroy();
+                                            }).go().destroy(removeCursor = true);
                                         }
-                                    }).destroy();
+                                    }).go().destroy(removeCursor = true);
                                 }
-                            }).destroy();
+                            }).go().destroy(removeCursor = true);
                         }
-                    }).destroy();
+                    }).go().destroy(removeCursor = true);
                 }
-            }).destroy();
+            }).go().destroy(removeCursor = true);
         }
-    }).destroy();
+    }).go().destroy(removeCursor = true).destroy(removeCursor = true);
 }
 
 

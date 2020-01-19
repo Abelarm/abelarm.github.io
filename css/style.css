@@ -1,9 +1,38 @@
-h1{
+:root {
+    --color-bg: #252a33;
+    --color-text: #eee;
+    --color-text-title: #8AB0AB;
+    --color-text-path: #B2FFA9;
+    --color-background: #1a1e24;
+    --theme: 'dark'
+}
+
+
+body{
+    padding: 0; 
+    margin: 0;
+    background: var(--color-background);
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box; display: -ms-flexbox; display: flex;
+    -webkit-box-align: center; -ms-flex-align: center; align-items: center;
+    -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+
+h3{
     font-family: 'Rubik Mono One', sans-serif;
 }
-h2{
+h4{
     font-family: 'Rubik Mono One', sans-serif;
     margin: 0;
+}
+
+#container{
+    max-height: 100%;
+    overflow: auto;
+    display: flex; /*added*/
+    flex-direction: column; /*added*/
 }
 
 #bash p{
@@ -39,16 +68,11 @@ p{
 }
 
 #name_term{
-    color: chartreuse;
+    color: var(--color-text-title);
 }
 
 #path_term{
-    color: dodgerblue;
-}
-
-body{
-    color: #fff;
-    background-color:#333
+    color: var(--color-text-path);
 }
 
 #bulb {
