@@ -1,13 +1,12 @@
 let $ = require("jquery");
 
-let name = 'luigi'
-let loc = 'resume'
-let marker_val = '$'
+let name = 'luigi';
+let loc = 'resume';
+let marker_val = '$';
 
 // Check if args present in command
 function checkIfArgs(a){
-    return a.filter(x => x.indexOf("--")>-1).length>0 ? true : false;
-    
+    return a.filter(x => x.indexOf("--")>-1).length>0 ? true : false;    
 }
 
 
@@ -115,6 +114,9 @@ function displayOutput(output){
     elem.appendChild(p);
     terminal.appendChild(elem);
     terminal.appendChild(NewTerminal);
+
+    
+    scroll();
     
     return elem;
 
@@ -149,6 +151,8 @@ function changeColor(){
         document.documentElement.style
         .setProperty('--color-text-path', '#B2FFA9');
         document.documentElement.style
+        .setProperty('--color-bar', '178, 255, 169');    
+        document.documentElement.style
         .setProperty('--color-background', '#1a1e24');
 
         
@@ -173,6 +177,8 @@ function changeColor(){
         document.documentElement.style
         .setProperty('--color-text-path', '#725AC1');
         document.documentElement.style
+        .setProperty('--color-bar', '114, 90, 193'); 
+        document.documentElement.style
         .setProperty('--color-background', 'linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b)');
         
         document.getElementById("bulb").style.filter = "brightness(1) invert(0)";
@@ -184,7 +190,9 @@ function changeColor(){
 
 
 function scroll(){
-    $("html, body").animate({scrollTop: $('html, body').get(0).scrollHeight}, 20);
+    if  (isMobile() == false){
+        document.getElementById('container').scrollTop=document.getElementById('container').scrollHeight;
+    }
 };
 
 function isMobile() {

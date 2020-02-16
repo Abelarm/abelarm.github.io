@@ -1,6 +1,6 @@
 // loading data with Promise
 
-var dStore = require("./dataStore.js");
+var dStore = require("./data.js").data;
 dStore['files'] = Object.keys(dStore['Info']).map(x => x.replace("_","."));
 console.log(dStore);
 

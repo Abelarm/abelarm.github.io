@@ -14,8 +14,13 @@ Here are the commands that you can use:
 
 `echo`: [MESSAGE] print messages in the screen
 
+`autopilot` : traverse all directories and files in order to print out the entire CV 
+
 ## Thanks: 
 This resume was created modifying the repo https://github.com/prithajnath/prithajnath.github.io
+#### CSS used/modified 
+- terminal.css https://github.com/Gioni06/terminal.css 
+- termynal https://github.com/ines/termynal <br>
 
 ## Contributing
 After the modification of any js file run the command npm run build.

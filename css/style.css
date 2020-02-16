@@ -2,11 +2,21 @@
     --color-bg: #252a33;
     --color-text: #eee;
     --color-text-title: #8AB0AB;
-    --color-text-path: #B2FFA9;
+    --color-text-path: rgb(178, 255, 169);
+    --color-bar: 178, 255, 169;
     --color-background: #1a1e24;
     --theme: 'dark'
 }
 
+span.date{
+    float: left;
+    padding-left: 10px;
+  }
+  
+span.place{
+    float: right;
+    padding-right: 10px;
+}
 
 body{
     padding: 0; 
@@ -50,11 +60,8 @@ p{
 }
 
 #blinker{
-    font-family: 'Ubuntu Mono';
-    animation-name: blinker;
-    animation-duration: 0.6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    -webkit-animation: cursor .8s infinite;
+    animation: cursor .8s infinite;
 }
 
 @keyframes blinker{
@@ -81,17 +88,11 @@ p{
 }
 
 .dir {
-    color:#d9534f;
+    color: var(--color-text-path);
 }
 
 a {
     cursor: url(../img/pixel_cursor.png), auto;
-}
-
-.progress-style {
-    background-color: chartreuse;
-    opacity: 0.6;
-    color: black;
 }
 
 .nopadding {
@@ -103,4 +104,15 @@ a {
 
  .row {
   margin-right: 0px !important;  
+  margin-left: 0px !important;
+ }
+
+ .colnopad {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+ .terminal-timeline{
+     font-family: 'Ubuntu Mono'; 
+     font-size: 16px
  }

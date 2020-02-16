@@ -2,9 +2,7 @@ let func = require("./functions.js");
 let $ = require("jquery");
 let TypeIt = require("typeit");
 
-
-// loading data with Promise
-var dStore = require("./dataStore.js");
+var dStore = require("./data.js").data;
 dStore['files'] = Object.keys(dStore['Info']).map(x => x.replace("_","."));
 console.log(dStore)
 
@@ -57,7 +55,7 @@ let commands = {
                     .replace(".","_")
                     .replace("--gif","")
                     .replace(/  */,"");
-        //let files = Object.keys(func.getContext(dStore["Info"])).map(x => x.replace("_","."));
+        //let files = Object.keys(func.getContext(dStore["Info"])).map(x => x.replace("_","."))
         if(info){
             let files = func.getContext(dStore["Info"]);
             console.log(files);
@@ -66,7 +64,26 @@ let commands = {
                 return ;
             }
             if(files.hasOwnProperty(info)){
-                func.displayOutput(files[info]);
+                if(files[info].hasOwnProperty("pre_template")){
+                    var pre_template = files[info]["pre_template"];
+                    var template = files[info]["template"];
+                    var filled_template = ""
+                    var arrayLength = files[info]["values"].length;
+                    for (var i = 0; i < arrayLength; i++){
+                        console.log(files[info]["values"][i])
+                        var exp = files[info]["values"][i];
+                        var filled_exp = eval(template)
+                        filled_template += filled_exp;
+                        if(files[info].hasOwnProperty("divider") && i != arrayLength - 1){
+                            filled_template += files[info]["divider"];
+                        }
+                    }
+                    var full = eval(pre_template);
+                    func.displayOutput(full);
+                }else{
+                    func.displayOutput(files[info]);
+                }
+                
             }
             else{
                 console.log(info);
@@ -112,10 +129,10 @@ let commands = {
         let commandList = Object.keys(commands);
         let data = "Try these commands to find out more about me: ";
         for(let i=0;i<commandList.length;i++){
-            data += commandList[i] + ", "
+            data += "<span class=\"dir\">" + commandList[i] + "</span>" + ", "
         }
         data = data.slice(0,data.length-2);
-        data += "<br> If you don't know how to use a terminal type: \"autopilot\" "
+        data += "<br> If you don't know how to use a terminal type: \" <span class=\"dir\"> autopilot </span> \" "
         func.displayOutput(data);
         }else{
             func.errorMessage(x);
