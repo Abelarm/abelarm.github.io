@@ -109,8 +109,8 @@ document.getElementById("bulb").addEventListener("click",func.changeColor);
 
 if (func.isMobile() === true){
     console.log('Preseting in mobile mode');
-    document.getElementById('help').style = 'display:none';
-    document.querySelectorAll(`[data-termynal]`)[0].style='height: 100vh; width: 100%;'
+    document.getElementById('help').style = 'display:none;';
+    document.querySelectorAll(`[data-termynal]`)[0].style='height: 100vh; width: 100%; padding: 50px 15px 20px;'
     cmds.commands.autopilot(true);
 }else{
     console.log('Presenting desktop mode');
