@@ -25,7 +25,7 @@ let data = {"Info":{
                                         </div> \
                                     </div>`',
                         "values": [{
-                                    "date"        : "Sep-2010<br>Mar-2014",
+                                    "date"        : "Sep-2014<br>Mar-2017",
                                     "title"       : "MSc., Computer Science", 
                                     "mark"        : "(110/110 Laude)",
                                     "desc_html"   : "<div><i>Computational Intelligence and Machine Learning</i></div> \
@@ -95,7 +95,7 @@ let data = {"Info":{
                                                                 <br> - JIRA, Git"
                                         },
                                         {
-                                            "date"        : "Sep 2017<br>Aug 2019",
+                                            "date"        : "Sep 2017<br>Aug 2018",
                                             "title"       : "ICT Application Specialist", 
                                             "work_link"   : "https://www.fcagroup.com/en-US/Pages/home.aspx",
                                             "work_name"   : "Fiat Chrysler Automobiles",
@@ -164,7 +164,7 @@ let data = {"Info":{
                                                     </div> \
                                                 </div>`',
                                     "values": [{
-                                                "date"        : "Oct-2016",
+                                                "date"        : "Oct 2016",
                                                 "title"       : "Sweden Game Arena Staff",
                                                 "desc_html"   : "<div>Provided support to the speakers of the conference and contributed to solve occurred problems.\
                                                                 </div> ",
