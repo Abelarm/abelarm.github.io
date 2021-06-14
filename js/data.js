@@ -1,7 +1,6 @@
 let data = {"Info":{
                     "about_txt":"<div style=\"font-family: \'Ubuntu Mono\'; font-size: 18px; padding-left: 5%;\">  \
-                                    Hi I'm Luigi Giugliano a 28 years old Researcher.<br>\
-                                    I have all the passions to define myself a geek/nerd but I don't like labels (unless in datasets). <br>\
+                                    Hi I'm Luigi Giugliano a 30 years old Machine Learning Engineer.<br>\
                                     I code, I read, I play and I travel, sometimes more than one at time. \
                                 </div>",
                     "contacts_txt":"<div style=\"font-family: \'Ubuntu Mono\'; font-size: 18px; padding-left: 5%;\">  \
@@ -73,7 +72,16 @@ let data = {"Info":{
                                                 </div>`',
                                     "values": [
                                         {
-                                            "date"        : "Jan 2020<br>Present",
+                                            "date"        : "Feb 2021<br>Present",
+                                            "title"       : "Machine learning Engineer", 
+                                            "work_link"   : "https://www.cvedia.com/",
+                                            "work_name"   : "CVEDIA",
+                                            "work_place"  : "Remote",
+                                            "desc_html"   : "<li>Improving and adding new feature to the internal training pipeline as well as \
+                                                                 training/improving models for customers </li>"
+                                        },
+                                        {
+                                            "date"        : "Jan 2020<br>Jan 2021",
                                             "title"       : "Research Technician in Deep Learning", 
                                             "work_link"   : "http://www.bcamath.org/en/",
                                             "work_name"   : "BCAM",
@@ -88,7 +96,9 @@ let data = {"Info":{
                                             "work_name"   : "LINKS Foundation",
                                             "work_place"  : "Turin - IT",
                                             "desc_html"   : "<li> Worked on European(H2020) projects both as developer and WP-leader. Attended as company representative in several consortium meetings and conferences.  \
-                                                                <br> - WP-leader in COMPOSITION project. For the same project developed (trained, tested and deployed) a Deep Learning solution for predictive maintenance of a machinery present in the shop floor of one of the partners. \
+                                                                <br> - WP-leader in COMPOSITION project. For the same project developed <br> \
+                                                                       &nbsp;&nbsp;(trained, tested and deployed) a Deep Learning solution for predictive <br> \
+                                                                       &nbsp;&nbsp;maintenance of a machinery present in the shop floor of one of the partners. \
                                                                 <br> - Python \
                                                                 <br> - Tensorflow, Keras, scikit-learn \
                                                                 <br> - Microservices, Docker, REST-API \
@@ -114,6 +124,18 @@ let data = {"Info":{
                                             "desc_html"   : "<li> \
                                                                 Worked with the core development team for adding and managing features of main system.\
                                                                 Mainly focused on the backoffice system with Python, using: pandas, flask, AlchemySQL and RabbitMQ. \
+                                                            </li>"
+                                        },
+                                        {
+                                            "date"        : "Aug 2015<br>Sep 2015",
+                                            "title"       : "Internship", 
+                                            "work_link"   : "https://launchpad.net/study.cs.ucl-websites/",
+                                            "work_name"   : "University College London (UCL)",
+                                            "work_place"  : "London - UK",
+                                            "desc_html"   : "<li> \
+                                                                Developed the UCLRemoteStudyEventDispatcher, a framework for handling events produced by data \
+                                                                collection clients and dispatching them to various computational algorithms on a server or HPC node. \
+                                                                It receives events from study UCL Study Websites via a message broker (RabbitMQ), and then dispatches them to relevant algorithms. \
                                                             </li>"
                                         }
                                     ]
@@ -236,11 +258,12 @@ let data = {"Info":{
                                                     </div> \
                                                 </div>`',
                                     "values": [{
-                                                "imgs": "<img src=\"img/tf.png\"> Tensorflow, \
+                                                "imgs": "<img src=\"img/pytor.png\"> PyTorch, \
+                                                         <img src=\"img/tf.png\"> Tensorflow, \
                                                          <img src=\"img/ks.jpg\"> Keras, \
                                                          <img src=\"img/sci.png\"> scikit-learn, \
                                                          <img src=\"img/flask.png\"> Flask ",
-                                                "level": "65",
+                                                "level": "75",
                                                 },
                                                 {
                                                 "imgs": "<img src=\"img/node.svg\" style=\"width:6%\"> Node.js, \
@@ -268,12 +291,9 @@ let data = {"Info":{
                                                 "level": "100",
                                                 },
                                                 {
-                                                "imgs": "<img src=\"img/uk.png\"> English ",
+                                                "imgs": "<img src=\"img/uk.png\"> English \
+                                                         <img src=\"img/spain.png\"> Spanish",
                                                 "level": "90",
-                                                },
-                                                {
-                                                "imgs": "<img src=\"img/spain.png\"> Spanish ",
-                                                "level": "60",
                                                 },
                                               ]
                                 },
