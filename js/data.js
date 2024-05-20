@@ -1,6 +1,6 @@
 let data = {"Info":{
                     "about_txt":"<div style=\"font-family: \'Ubuntu Mono\'; font-size: 18px; padding-left: 5%;\">  \
-                                    Hi I'm Luigi Giugliano a 30 years old Machine Learning Engineer.<br>\
+                                    Hi I'm Luigi Giugliano a 33 years old Sr. Machine Learning Engineer.<br>\
                                     I code, I read, I play and I travel, sometimes more than one at time. \
                                 </div>",
                     "contacts_txt":"<div style=\"font-family: \'Ubuntu Mono\'; font-size: 18px; padding-left: 5%;\">  \
@@ -72,13 +72,33 @@ let data = {"Info":{
                                                 </div>`',
                                     "values": [
                                         {
-                                            "date"        : "Feb 2021<br>Present",
-                                            "title"       : "Machine learning Engineer", 
+                                            "date"        : "Feb 2022<br>Present",
+                                            "title"       : "Sr. Machine Learning Engineer", 
+                                            "work_link"   : "https://www.pepsico.com/",
+                                            "work_name"   : "PEPSICO",
+                                            "work_place"  : "Vitoria - Spain",
+                                            "desc_html"   : "<li> \
+                                                                     - Main contributor of internal Forecasting Engine. \
+                                                                <br> - Developed and maintained MLOps pipelines. \
+                                                                <br> - Designed and maintained Azure Data Factory pipelines. \
+                                                                <br> - Designed the architecture of the e2e Forecast process. \
+                                                                <br> \
+                                                                <br> <b>Skills:</b> PySpark - Time Series Forecasting - Databricks - Azure Data Factory - MLOps - DevOps\
+                                                            </li>"
+                                        },
+                                        {
+                                            "date"        : "Feb 2021<br>Jan 2022",
+                                            "title"       : "Machine Learning Engineer", 
                                             "work_link"   : "https://www.cvedia.com/",
                                             "work_name"   : "CVEDIA",
                                             "work_place"  : "Remote",
-                                            "desc_html"   : "<li>Improving and adding new feature to the internal training pipeline as well as \
-                                                                 training/improving models for customers </li>"
+                                            "desc_html"   : "<li>\
+                                                                     - Developed and maintaining new features for the training/inference pipelines. \
+                                                                <br> - Trained and developed neural networks for computer vision applications, including object detection/classification/segmentation. \
+                                                                <br> - Followed client's project end-to-end technically and as contact person. \
+                                                                <br> \
+                                                                <br> <b>Skills:</b> PyTorch - Python - Object Detection - Object classification - Computer Vision\
+                                                            </li>"
                                         },
                                         {
                                             "date"        : "Jan 2020<br>Jan 2021",
@@ -86,8 +106,12 @@ let data = {"Info":{
                                             "work_link"   : "http://www.bcamath.org/en/",
                                             "work_name"   : "BCAM",
                                             "work_place"  : "Bilbao - ES",
-                                            "desc_html"   : "<li>Applying Deep Learning solutions to Time Series classification problems,\
-                                                            developing and testing innovative approaches.</li>"
+                                            "desc_html"   : "<li> \
+                                                                     - Applied Deep Learning solutions to Time Series classification problems \
+                                                                <br> - Developed and tested innovative approaches. \
+                                                                <br> \
+                                                                <br> <b>Skills:</b> PyTorch - Python - Time Series Analysis\
+                                                            </li>"
                                         },
                                         {
                                             "date"        : "Aug 2018<br>Dic 2019",
@@ -99,10 +123,9 @@ let data = {"Info":{
                                                                 <br> - WP-leader in COMPOSITION project. For the same project developed <br> \
                                                                        &nbsp;&nbsp;(trained, tested and deployed) a Deep Learning solution for predictive <br> \
                                                                        &nbsp;&nbsp;maintenance of a machinery present in the shop floor of one of the partners. \
-                                                                <br> - Python \
-                                                                <br> - Tensorflow, Keras, scikit-learn \
-                                                                <br> - Microservices, Docker, REST-API \
-                                                                <br> - JIRA, Git"
+                                                                <br> \
+                                                                <br> <b>Skills:</b> - Python - Keras - Time Series Analysis - Flutter\
+                                                            </li>"
                                         },
                                         {
                                             "date"        : "Sep 2017<br>Aug 2018",
@@ -112,7 +135,8 @@ let data = {"Info":{
                                             "work_place"  : "Turin - IT",
                                             "desc_html"   : "<li> \
                                                                 Software developer for projects regarding Industry 4.0. Developing and managing applications that support the Maserati production plant in Turin.\
-                                                                Including applications on: Machine Learning, Data Science, Data Visualisation, Industrial IoT, Web Development.\
+                                                                <br> \
+                                                                <br> <b>Skills:</b> - Data Visualization - Machine Learning - Internet of Things(IoT) \
                                                             </li>"
                                         },
                                         {
@@ -123,7 +147,9 @@ let data = {"Info":{
                                             "work_place"  : "Milan - IT",
                                             "desc_html"   : "<li> \
                                                                 Worked with the core development team for adding and managing features of main system.\
-                                                                Mainly focused on the backoffice system with Python, using: pandas, flask, AlchemySQL and RabbitMQ. \
+                                                                Mainly focused on the backoffice system with Python. \
+                                                                <br> \
+                                                                <br> <b>Skills:</b> - Python - RabbitMQ - Java - Git\
                                                             </li>"
                                         },
                                         {
@@ -136,6 +162,8 @@ let data = {"Info":{
                                                                 Developed the UCLRemoteStudyEventDispatcher, a framework for handling events produced by data \
                                                                 collection clients and dispatching them to various computational algorithms on a server or HPC node. \
                                                                 It receives events from study UCL Study Websites via a message broker (RabbitMQ), and then dispatches them to relevant algorithms. \
+                                                                <br> \
+                                                                <br> <b>Skills:</b> - Python - RabbitMQ - Javascript - Git\
                                                             </li>"
                                         }
                                     ]
